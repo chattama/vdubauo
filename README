@@ -1,0 +1,37 @@
+
+vdubauo.vdf
+
+	VirtualDub上からAviUtlの出力プラグインを使用するプラグインです。
+
+
+インストール:
+	vdubauo.vdfをpluginsフォルダにコピーするか、/Fオプションで指定してください。
+	AviUtlプラグイン(*.auo)をpluginsフォルダにコピーしてください。
+
+
+使用方法:
+	VDubAuoメニューから出力プラグインを選択してください。
+	ダイアログが出るので保存を選択すれば出力が開始されます。
+	Stopボタンで中断します。
+
+
+注意事項:
+	ジョブ登録はできません。
+
+	フレームサーバ経由で出力する為、映像は一旦RGB24に変換されます。
+	(ソースYUY2で、YUY2要求するプラグインを使用した場合、YUY2→RGB24→YUY2変換が入ります)
+	音声もリサンプリングされているようです？
+	気になる人は本家使いましょう・・・。
+
+
+変更履歴:
+	2008/04/22 version 0.2
+		WinAPIOverride32のバージョンアップに対応。
+		VirtualDubで例外が発生しても強制終了しなくなりました。
+
+	2008/04/03 version 0.1
+		とりあえず動く版リリース
+
+This program uses WinAPIOverride32
+http://jacquelin.potier.free.fr/winapioverride32/
+
